@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:title="POS">
+        <menu>
+            <item android:icon="@drawable/copy" android:id="@+id/nav_home" android:title="@string/POS_printing"/>
+            <item android:icon="@drawable/avatar" android:id="@+id/clients" android:title="@string/Clients"/>
+            <item android:icon="@drawable/piechart" android:id="@+id/reportsFragment" android:title="@string/Reports"/>
+            <item android:icon="@drawable/folder" android:id="@+id/inventario" android:title="@string/Inventory"/>
+        </menu>
+    </item>
+    <item android:title="@string/OtrasFunciones">
+        <menu>
+            <item android:icon="@drawable/house" android:id="@+id/nav_slideshow" android:title="@string/Home"/>
+            <item android:icon="@drawable/tag" android:id="@+id/nav_gallery" android:title="@string/Text_printing"/>
+            <item android:icon="@drawable/photocamera" android:id="@+id/photosPrinting" android:title="@string/Photos_printing"/>
+            <item android:icon="@drawable/book" android:id="@+id/pdfPrinting" android:title="@string/StringPDF"/>
+            <item android:icon="@drawable/qr" android:id="@+id/nav_QR" android:title="@string/QRCode_printing"/>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single"/>
+    <item android:title="@string/Settingss">
+        <menu>
+            <item android:icon="@drawable/settings" android:id="@+id/nav_Settings" android:title="@string/Settings"/>
+            <item android:icon="@drawable/shoppingcart" android:id="@+id/suscriptions" android:title="@string/subscription"/>
+        </menu>
+    </item>
+</menu>

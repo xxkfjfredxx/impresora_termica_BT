@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.manejoimpresora.FragmentsUI.PrintBill.PrintBill"
+        android:label="@string/POS_printing">
+        <action
+            android:id="@+id/action_nav_home_to_fragmentProducts"
+            app:destination="@+id/fragmentProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.manejoimpresora.FragmentsUI.PrintText.PrintText"
+        android:label="@string/Text_printing" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.manejoimpresora.FragmentsUI.Home.Home"
+        android:label="@string/Home" />
+    <fragment
+        android:id="@+id/nav_QR"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.QrPrintFragment"
+        android:label="@string/QRCode_printing" />
+    <fragment
+        android:id="@+id/nav_Settings"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.SettingsFragment"
+        android:label="@string/Settings">
+        <action
+            android:id="@+id/action_nav_Settings_to_instructionsFragment3"
+            app:destination="@+id/instructionsFragment" />
+        <action
+            android:id="@+id/action_nav_Settings_to_bills2Fragment"
+            app:destination="@+id/bills2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosPrinting"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.PhotosPrintFragment"
+        android:label="@string/Photos_printing" />
+    <fragment
+        android:id="@+id/drawAndPrint"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.DrawAndPrintFragment"
+        android:label="@string/DrawPrint" />
+    <fragment
+        android:id="@+id/fragmentProducts"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.ProductsFragment"
+        android:label="@string/MyProducts" />
+    <fragment
+        android:id="@+id/bills2Fragment"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.SetBillFragment"
+        android:label="@string/recibo" />
+    <fragment
+        android:id="@+id/pdfPrinting"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.PdfPrintFragment"
+        android:label="@string/StringPDF" />
+    <fragment
+        android:id="@+id/rewardFragment"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.rewardFragment"
+        android:label="@string/rewardVideo" />
+    <fragment
+        android:id="@+id/suscriptions"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.SuscriptionsFragment"
+        android:label="@string/subscription" />
+    <fragment
+        android:id="@+id/clients"
+        android:name="com.example.manejoimpresora.FragmentsUI.CLients.ClientsFragment"
+        android:label="@string/Clients" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.ReportsFragment"
+        android:label="@string/Reports" />
+    <fragment
+        android:id="@+id/inventario"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.fragmentInventario"
+        android:label="@string/Inventory" />
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="com.example.manejoimpresora.FragmentsUI.Others.TutorialFragment"
+        android:label="@string/Tutorial" />
+</navigation>
